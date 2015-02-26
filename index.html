@@ -3,16 +3,23 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Test</title>
-    <script type="text/javascript" src="test_windows.js"/>
+    <!-- script type="text/javascript" src="test_windows.js"/> -->
+<script language="javascript">
+    function moveFw() {
+        window.moveby(10,10);
+    }
 
+    function moveBw() {
+        window.moveBy(-10.-10);
+    }
+</script>
 </head>
 <body>
-    <h1>Test</h1>
-    <script>
-        confirm("Continue");
-        body_load();
-    </script>
-    <h1>Test End</h1>
-
+    <h1>Windows Test</h1>
+    <p>
+        <input type="button" onclick="moveBw()" value="앋으로 이동">
+        <p>
+        <input type="button" onclick="moveBw()" value="뒤로 이동">
+    <p>
 </body>
 </html>
