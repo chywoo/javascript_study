@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1 id="title">Turn on the Light!</h1>
+<img id="light" src="pic_bulboff.gif" onclick="toggle_light()">
+<script>
+    function toggle_light() {
+        var image = document.getElementById("light");
+        if (image.src.match('bulboff')) {
+            image.src = "pic_bulbon.gif";
+            document.getElementById("title").innerHTML = "Turn off the Light!!!!";
+        } else {
+            image.src = "pic_bulboff.gif";
+            document.getElementById("title").innerHTML = "Turn on the Light!!!!";
+        }
+
+
+    }
+</script>
+
+</body>
+</html>
