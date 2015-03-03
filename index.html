@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Test</title>
-    <!-- script type="text/javascript" src="test_windows.js"/> -->
+    <script type="text/javascript" src="/test_windows.js"/>
 <script language="javascript">
     function moveFw() {
         window.moveby(10,10);
@@ -11,6 +11,9 @@
 
     function moveBw() {
         window.moveBy(-10.-10);
+    }
+    function resize() {
+        window.resizeBy(50, 50);
     }
 </script>
 </head>
@@ -20,6 +23,13 @@
         <input type="button" onclick="moveBw()" value="앋으로 이동">
         <p>
         <input type="button" onclick="moveBw()" value="뒤로 이동">
+        <p/>
+        <input type="button" onclick="resize()" value="크지 조절">
     <p>
+    <script language="JavaScript">
+        for (var i=0; i<10; i++) {
+            document.write("<p>" + i);
+        }
+    </script>
 </body>
 </html>

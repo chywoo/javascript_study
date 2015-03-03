@@ -7,18 +7,27 @@
 <body>
 <h1 id="title">Turn on the Light!</h1>
 <img id="light" src="pic_bulboff.gif" onclick="toggle_light()">
+<span id="message"></span>
 <script>
     function toggle_light() {
         var image = document.getElementById("light");
+        var title = document.getElementById("title");
+        var msg = document.getElementById("message");
+
         if (image.src.match('bulboff')) {
             image.src = "pic_bulbon.gif";
-            document.getElementById("title").innerHTML = "Turn off the Light!!!!";
+            title.innerHTML = "Turn off the Light!!!!";
+            title.style.color = "RED";
+            msg.style.color="RED";
+            msg.innerHTML="So bright!!"
         } else {
             image.src = "pic_bulboff.gif";
-            document.getElementById("title").innerHTML = "Turn on the Light!!!!";
+            title.innerHTML = "Turn on the Light!!!!";
+            title.style.color = "BLACK";
+            msg.innerHTML="";
         }
 
-
+        document.body.clientHeight
     }
 </script>
 

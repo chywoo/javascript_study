@@ -6,8 +6,8 @@ function body_load()
 {
     console.log("Start function");
 
-    windows.confirm("Move windows")
+    windows.confirm("Move windows");
     windows.moveBy(10, 10);
 
-    return;
+
 }
